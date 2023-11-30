@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;500&family=Poppins&family=Roboto:wght@400;500&family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&family=Roboto:wght@400;500&family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&family=Roboto:wght@400;500;700&family=Vina+Sans&display=swap');
+
+/*resets*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --primary-text-color:#183b56;
+    --secondary-text-color:#577592;
+    --accent-color:#2294ed;
+    --accent-color-dark:#1d69a3;
+    --pading-inline-section:20px;
+}
+body{
+    font-family: 'Poppins' , sans-serif;
+    color: var(--primary-text-color);
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+h4{
+    margin-top: 20px;
+}
+p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 1rem;
+    color:var(--secondary-text-color);
+    line-height: 1.5rem;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul{
+    list-style:none;
+}
+
+/*utility classes*/
+.small-bold-text{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline:var(--pading-inline-section);
+    overflow: hidden;
+}
+.banner-text{
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.primary-button{
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: white !important;
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    text-align: center;
+}
+.primary-button:hover{
+    background-color: var(--accent-color-dark);
+}
+.secondary-button{
+    border-radius: 6px;
+    font-weight: 700;
+    color:var(--primary-text-color) !important;
+    padding: 10px 24px;
+    transition: 0.2s ease-out;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+}
+.secondary-button:hover{
+    border-color: var(--accent-color);
+    color: var(--accent-color) !important;
+}
+
+
+/* top banner */
+.top-banner{
+    
+    background-color: #4fb3d4;
+    background-size: 300px;  
+}
+
+/* main-nav */
+.company-logo img{
+    width: 200px;
+}
+.main-nav{
+    justify-content: space-between;
+    margin-top: 20px;
+    position: relative;
+}
+.nav-links{
+    flex-basis: 730px;
+}
+.nav-links ul{
+     justify-content: end;
+     gap: 40px;
+}
+.nav-toggle{
+    display: none;
+}
+.hover-link{
+    color: var(--primary-text-color);
+    transition: 0.2s ease-out;
+}
+.hover-link:hover{
+    color: var(--accent-color);
+}
+
+/* header-section*/
+header{
+    padding: 50px var(--pading-inline-section) 0;
+}
+.header-section{
+    justify-content: center;
+    gap: 50px;
+}
+.header-right img{
+    width: 100%;
+}
+.header-left{
+    max-width: 40vw;
+}
+.header-left h1{
+    margin-top: 20px;
+}
+.get-started-btn{
+    margin-top:20px;
+}
+
+
+/*section-1*/
+.companies-header{
+    text-align: center;
+    margin-block: 20px;
+    color: var(--primary-text-color);
+}
+.logos {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.logo{
+height: 46px;
+}
+
+
+
+/*section-2*/
+.features-header{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.features-section{
+    padding: 80px var(--pading-inline-section) 0;
+    background-image: url("circular-wireframe-mesh-circles-lines-effect-logo-element47_299644-737.jpg");
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.features-heading-text{
+    margin-bottom: 20px;
+}
+.features-card{
+    flex-direction: column;
+    gap: 20px;
+    max-width: 30%;
+    text-align: center;
+}
+.features-area{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+/* big-feature-section */
+
+.big-feature-section{
+    padding: 30px var(--pading-inline-section) 0;
+}
+.feature-img img{
+    width: 60%;
+    height: auto;
+}
+.feature-desc{
+    flex-direction: column;
+    align-items: flex-start;
+}
+#second-big-feature{
+    flex-direction: row-reverse;
+}
+
+/*examples-section*/
+.example-section{
+    padding: 80px var(--pading-inline-section);
+}
+.examples-header{
+   flex-direction: column;
+   gap: 20px;
+   text-align: center;
+}
+.examples-area{
+    justify-content: space-between;
+    margin-block: 30px;
+    flex-wrap: wrap;
+}
+.examples-card{
+    width: 23%;
+    position: relative;
+    height: 300px;
+    background: black;
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url("Toronto-is-North-Americas-3rd-Largest-Tech-Hub-Live-Assets-768x768.jpg");
+    background-size: cover;
+    transition:0.2s ease-out;
+}
+.examples-card:hover{
+    box-shadow:0 0 10px #888;
+}
+.examples-card:nth-child(2){
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url("iStock-902787158.jpg");
+    background-size: cover;
+
+}
+.examples-card:nth-child(3){
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url("audience.jpg");
+    background-size: cover;
+
+}
+.examples-card:nth-child(4){
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url("visitors.png");
+    background-size: cover;
+
+}
+.card-text{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+}
+
+
+/*cta-section*/
+.cta-section-container{
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+    text-align: center;
+}
+.cta-section{
+    background-color: #183b54;
+    padding: 120px var(--pading-inline-section) 80px;
+}
+.cta-section-container p{
+    color: white;
+    margin-top: 20px;
+}
+
+
+/*footer*/
+.link-column{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.footer-container{
+    align-items: flex-start;
+    justify-content: space-between;
+}
+footer{
+    padding-block: 80px;
+    background-color: #ebf2fa;
+}
+
+
+/*sub-footer*/
+
+.sub-footer{
+    background-color: #b9cde4;
+    padding: var(--pading-inline-section);
+}
+.sub-footer-container{
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
